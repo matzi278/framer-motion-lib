@@ -1,2 +1,2 @@
 // src/index.ts
-export {default as FadeInText} from './components/Text/FadeIn';
+export {default as FadeIn} from './components/Text/FadeIn';
