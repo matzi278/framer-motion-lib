@@ -1,13 +1,12 @@
 {
   "name": "framer-motion-lib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library of Framer Motion components [WIP]",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "prepare": "npm run build"
+
+    "prepare": ""
   },
   "keywords": ["framer-motion", "animation", "react"],
   "author": "Tim Schulmann",

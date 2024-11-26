@@ -4,8 +4,9 @@ import { motion, useInView } from "motion/react";
 import React from "react";
 import { useRef } from "react";
 
-interface FadeInProps {
+interface FadeInTextProps {
   children: React.ReactNode;
+  className?: string;
   options?: {
     once?: boolean;
     staggerChildren?: number;
@@ -14,7 +15,7 @@ interface FadeInProps {
   };
 }
 
-export const FadeIn = ({ children, options }: FadeInProps) => {
+export const FadeInText = ({ children, options, className }: FadeInTextProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, {
     once: options?.once || true,
@@ -44,7 +45,7 @@ export const FadeIn = ({ children, options }: FadeInProps) => {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={wrapperVariants}
-      className={`flex flex-wrap`}
+      className={`flex flex-wrap ${className}`}
     >
       {words?.map((word, index) => (
         <span key={index} className="flex overflow-hidden">
@@ -56,4 +57,4 @@ export const FadeIn = ({ children, options }: FadeInProps) => {
   );
 };
 
-export default FadeIn;
+export default FadeInText;
