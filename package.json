@@ -1,13 +1,16 @@
 {
   "name": "framer-motion-lib",
   "version": "1.0.0",
-  "description": "",
+  "description": "A library of Framer Motion components [WIP]",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["framer-motion", "animation", "react"],
+  "author": "Tim Schulmann",
   "license": "ISC",
   "dependencies": {
     "motion": "12.0.0-alpha.2",
@@ -21,5 +24,13 @@
     "eslint": "^9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matzi278/framer-motion-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matzi278/framer-motion-lib/issues"
+  },
+  "homepage": "https://bloxl.de" 
 }
